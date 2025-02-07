@@ -5,15 +5,15 @@ html {
     height: 100%;
 }
 
-/* Reduce carousel height but keep full width */
+/* Carousel Section */
 .carousel-item img {
-    height: 500px; /* Adjust the height */
+    height: 500px;
     width: 100%;
-    opacity: 0.8; /* Slight transparency for better text visibility */
+    opacity: 0.8;
     object-fit: cover;
 }
 
-/* Center and style the welcome text */
+
 .carousel-caption {
     position: absolute;
     top: 80%;
@@ -23,16 +23,16 @@ html {
     color: rgb(54, 55, 63);
     font-size: 5rem;
     font-weight: bolder;
-    font-family: 'Ubuntu', serif; /* Set font style */
+    font-family: 'Ubuntu', serif; 
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
 }
 
-/* Set image opacity */
+
 .img-opacity {
-    opacity: 0.5; /* 0 is fully transparent, 1 is fully opaque */
+    opacity: 0.5;
 }
 
-
+/* Course Section */
 .course-container {
     padding: 10px;
     margin-bottom: 10px;
@@ -108,6 +108,7 @@ html {
 }
 
 
+/* Footer section */
 .footer {
     background-color: #f8f9fa;
     padding: 15px 20px;
@@ -134,5 +135,99 @@ html {
     font-size: 1.5rem;
 }
 
+
+/* Responsive Styles */
+
+/* Tablet devices*/
+@media screen and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .carousel-caption {
+        font-size: 3rem;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .footer-logo {
+        font-size: 1.5em;
+    }
+
+    .copy {
+        flex: 1;
+        text-align: center;
+    }
+
+    .footer-icons {
+        text-align: right;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    .course-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        font-size: 2rem;
+        top: 70%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .footer-logo {
+        font-size: 1.2em;
+    }
+
+    .copy {
+        flex: 1;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .footer-icons {
+        text-align: right;
+    }
+
+    .footer-icons a {
+        font-size: 1.2rem;
+        margin-left: 8px;
+    }
+}
 
 
